@@ -29,9 +29,11 @@ https://templatemo.com/tm-526-vanilla
 			<li class="nav-item"><a class="nav-link" href="#home"><span>首頁</span></a></li>
 			<li class="nav-item"><a class="nav-link" href="#commission"><span>委託項目</span></a></li>
 			<li class="nav-item"><a class="nav-link" href="#attention"><span>注意事項</span></a></li>
-			<li class="nav-item"><a class="nav-link" href="work.html"><span>作品集</span></a></li>
+			<li class="nav-item"><a class="nav-link" href="work.html"><span>作品集 <i class="fa fa-external-link" aria-hidden="true"></i></span></a></li>
 		</ul>
 	</div>
+
+	<a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out rounded-circle" data-abc="true"></a>
 
 	<div class="baner-content" id="home">
 		<div class="container">
@@ -43,7 +45,7 @@ https://templatemo.com/tm-526-vanilla
 				<p style="color: #776346"><strong>Schedule:</strong> 2023/07~</p>
 				<p><a class="sns" href="https://www.plurk.com/kuonyuu" title="Plurk" target="_blank"><i class="fa fa-product-hunt"></i></a> <a class="sns" href="https://clibo.tw/users/kuonyuu" title="Plurk" target="_blank">Clibo</a></p>
 				<div class="primary-button">
-					<a class="rounded-pill" href="#commission">更多 ⮯</a>
+					<a class="rounded-pill" href="#commission">更多 <i class="fa fa-level-down" aria-hidden="true"></i></a>
 				</div>
 			</div>
 		</div>
@@ -180,7 +182,7 @@ https://templatemo.com/tm-526-vanilla
 	</div>
 
 	
-	<div class="parallax-content projects-content" id="attention">
+	<div class="projects-content" id="attention">
 		<div class="container">
 			<div class="row justify-content-md-center">
 				<div class="col-md-8">
@@ -242,7 +244,7 @@ https://templatemo.com/tm-526-vanilla
 			<div class="row">
 				<div class="col-md-12">
 					<div class="primary-button">
-						<a class="rounded-pill" href="#home">回到最上 ⮭</a>
+						<a class="rounded-pill" href="#home">回到最上 <i class="fa fa-level-up" aria-hidden="true"></i></a>
 					</div>
 					<ul>
 						<li><a href="https://www.plurk.com/kuonyuu" title="Plurk" target="_blank"><i class="fa fa-product-hunt"></i></a></li>
@@ -265,16 +267,6 @@ https://templatemo.com/tm-526-vanilla
 	<script src="js/vendor/bootstrap.min.js"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/main.js"></script>
-	<script>
-		function openCity(cityName) {
-			var i;
-			var x = document.getElementsByClassName("city");
-			for (i = 0; i < x.length; i++) {
-				 x[i].style.display = "none";  
-			}
-			document.getElementById(cityName).style.display = "block";  
-		}
-	</script>
 
 	<script>
 		$(document).ready(function(){
@@ -299,6 +291,22 @@ https://templatemo.com/tm-526-vanilla
 				window.location.hash = hash;
 				});
 			} // End if
+			});
+
+			$(window).scroll(function() {
+			  if ($(this).scrollTop() > 20) {
+			    $('#toTopBtn').removeClass(".js-cd-top");
+			    $('#toTopBtn').fadeIn();
+			  } else {
+			    $('#toTopBtn').fadeOut();
+			  }
+			});
+
+			$('#toTopBtn').click(function() {
+			  $("html, body").animate({
+			    scrollTop: 0
+			  }, 1000);
+			  return false;
 			});
 		});
 	</script>
