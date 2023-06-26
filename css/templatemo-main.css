@@ -433,8 +433,8 @@ h4, .h4 {
 
 
 .projects-content {
-  padding-top: 20vh;
-  padding-bottom: 20vh;
+  padding-top: 16vh;
+  padding-bottom: 16vh;
 /*   background-image: url(../img/3rd-section.jpg); */
 }
 
@@ -790,8 +790,8 @@ footer em {
 /*     text-align: center; */
   }
   .service-content, .projects-content {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
   }
 
   .service-content .left-text .line-dec {
