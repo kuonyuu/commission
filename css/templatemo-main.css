@@ -67,6 +67,7 @@ strong { color:#996b96  }
   z-index: 98;
   padding: 21px;
   background-color: hsla(5,76%,62%,.8);
+  box-shadow: 0 0 6px #ffffff8a;
 }
 
 #toTopBtn:hover {
