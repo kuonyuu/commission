@@ -685,6 +685,11 @@ section {
   background-color: #bf836b;
 }
 
+.tabs .active:hover {
+  border-color: #ffffffce !important;
+  color: #bf836b !important;
+}
+
 .tabgroup .col-md-3 {
   padding-left: 10px;
   padding-right: 10px;
@@ -701,7 +706,7 @@ section {
 }
 
 .tabs-content ul.tabs a:hover {
-  opacity: 0.8;
+/*   opacity: 0.8; */
   background-color: #ffffffce;
   color: rgb(198, 182, 167);
 }
