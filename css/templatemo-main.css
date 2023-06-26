@@ -52,7 +52,8 @@ a:hover {
   transition: all .3s;
 }
 
-strong { color:#996b96  }
+/* strong { color:#996b96 } */
+strong { color:#775274 }
 
 /*----------
   top button
