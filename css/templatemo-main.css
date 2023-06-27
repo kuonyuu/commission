@@ -6,6 +6,14 @@ https://templatemo.com/tm-526-vanilla
 
 */
 
+
+/* This changes all the animations globally */
+
+:root {
+  --animate-duration: 1.5s !important;
+  --animate-delay: 1s !important;
+}
+
 .price {
   background-color: #CD5F5F6B;
   color: #fff;
@@ -54,6 +62,16 @@ a:hover {
 
 /* strong { color:#996b96 } */
 strong { color:#775274 }
+
+img, img:hover {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+a:hover img {
+  transform: scale(1.05);
+  box-shadow:  0 0 6px #fff;
+}
 
 /*----------
   top button
@@ -301,7 +319,7 @@ strong { color:#775274 }
   -moz-text-fill-color: transparent;
 }
 
-.baner-content h1 span::before,
+/* .baner-content h1 span::before, */
 .highlight_title_span::before {
       /* Highlight color */
       background-color: #ffffff70;
