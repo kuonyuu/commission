@@ -882,6 +882,7 @@ footer em {
     right: 17px;
   }
 
+  .fixed-side-navbar.showNavSpan .nav > li a span,
   .fixed-side-navbar .nav > li a span {
     display: none;
   }
@@ -939,6 +940,10 @@ footer em {
 
   .service-item .ppart { float: left; width: 50%; text-align: left; }
   .service-item a.hoverZoomLink { float: right; width: 48%;  }
+
+
+  .tabgroup .tabpanel_content { min-height: 0; }
+  .tabs-content { padding-right: 40px;  }
 
 }
 
