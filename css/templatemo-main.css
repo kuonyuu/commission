@@ -892,14 +892,14 @@ footer em {
   }
 
   .baner-content h1 {
-    font-size: 64px;
+    font-size: 56px;
   }
 
   .baner-content em {
   }
 
-  .baner-content span:not(.display-1) {
-    font-size: 24px;
+  .baner-content .description {
+/*     font-size: 24px; */
   }
 
   .baner-content .primary-button {
