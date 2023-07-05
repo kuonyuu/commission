@@ -882,20 +882,25 @@ footer em {
     right: 17px;
   }
 
+  .fixed-side-navbar.showNavSpan .nav > li a span,
+  .fixed-side-navbar .nav > li a span {
+    display: none;
+  }
+
   
   .baner-content {
     padding-top: 30vh;
   }
 
   .baner-content h1 {
-    font-size: 64px;
+    font-size: 56px;
   }
 
   .baner-content em {
   }
 
-  .baner-content span:not(.display-1) {
-    font-size: 24px;
+  .baner-content .description {
+/*     font-size: 24px; */
   }
 
   .baner-content .primary-button {
@@ -921,17 +926,24 @@ footer em {
     text-align: left;
   }
 
+  .service-content .left-text .primary-button { margin-bottom: 60px; }
+
+  .service-right-centent .col-md-4 { margin-bottom: 30px; }
+
   .service-content .service-item {
 /*     background-color: rgba(0, 0, 0, 0.5); */
-    padding: 25px 30px;
-    text-align: center;
+/*     padding: 25px 30px; */
+    
 /*     color: #fff; */
     margin-bottom: 30px;
   }
 
-  .service-content .service-item .text-left {
-    text-align: center !important;
-  }
+  .service-item .ppart { float: left; width: 50%; text-align: left; }
+  .service-item a.hoverZoomLink { float: right; width: 48%;  }
+
+
+  .tabgroup .tabpanel_content { min-height: 0; }
+  .tabs-content { padding-right: 40px;  }
 
 }
 
